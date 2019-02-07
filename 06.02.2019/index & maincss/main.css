@@ -1,0 +1,430 @@
+body {
+    margin: 0px;
+}
+
+.headerrow {
+    width: 100%;
+    height: 80px;
+    background: rgb(88, 88, 88);
+    position: relative;
+    position: fixed;
+    z-index: 2;
+}
+
+.companylogo {
+    width: 200px;
+    height: 170px;
+    top: -50%;
+    position: absolute;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#navbar {
+    list-style-type: none;
+    position: absolute;
+    left: 18%;
+    top: 15px;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: rgb(0, 179, 155);
+    margin-left: 30px;
+    border-bottom: 2px solid rgba(177, 145, 0, 0);
+    transition: 0.5s;
+}
+
+#navbar li:hover a {
+    color: rgb(0, 255, 221);
+    border-bottom: 2px solid rgb(255, 208, 0);
+    transition: 0.5s;
+}
+
+.register {
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgb(0, 165, 157);
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.register:hover {
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 2px solid rgb(0, 255, 221);
+}
+
+.register:hover span {
+    color: rgb(255, 208, 0);
+    transition: 0.5s;
+}
+
+.register span {
+    font-size: 15px;
+    transition: 0.5s;
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    color: rgb(177, 144, 0);
+}
+
+.login {
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgb(0, 165, 157);
+    border-radius: 20px;
+    position: absolute;
+    right: 11%;
+    top: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login:hover {
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 2px solid rgb(0, 255, 221);
+}
+
+.login:hover span {
+    color: rgb(255, 208, 0);
+    transition: 0.5s;
+}
+
+.login span {
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    color: rgb(177, 144, 0);
+}
+
+.parallaximg01 {
+    background-image: url("../images/image01.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.parallaximg01transparent {
+    width: 100%;
+    height: 500px;
+    background: rgba(61, 57, 57, 0.397);
+}
+
+#parallax01 .parallaximg01 h1 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    top: 25%;
+    left: 31%;
+    letter-spacing: 5px;
+}
+
+#parallax01 .parallaximg01 h2 {
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: rgb(255, 208, 0);
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    top: 35%;
+    left: 24%;
+}
+
+#parallax01 .parallaximg01 p {
+    font-size: 15px;
+    font-family: 'Hind Siliguri', sans-serif;
+    position: absolute;
+    width: 500px;
+    top: 60%;
+    left: 32%;
+    color: white;
+}
+
+.popularPackages {
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    padding-top: 20px;
+    background-image: linear-gradient(to right, rgba(82, 82, 82, 0.486) , rgba(127, 134, 69, 0.918));
+}
+
+.popularPackages h2 {
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Hind Siliguri', sans-serif;
+    left: 32%;
+    color: wheat;
+}
+
+.popularPackages hr {
+    position: absolute;
+    border: 1px solid rgb(255, 187, 0);;
+    width: 350px;
+    left: 37%;
+    top: 12%;
+}
+
+.popularPackages p {
+    position: absolute;
+    font-size: 15px;
+    left: 32%;
+    top: 14%;
+    font-family: 'Hind Siliguri', sans-serif;
+    width: 480px;
+    color: wheat;
+}
+
+.packagesHolder {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    top: 24%;
+    left: 2.3%;
+}
+
+.tourPackage {
+    position: relative;
+}
+
+.packagesHolder .tourPackage {
+    margin: 20px auto;
+    width: 360px;
+    height: 400px;
+    box-shadow: 0px 0px 20px 11px #888888;
+}
+
+.packagesHolder .tourPackage img {
+    width: 360px;
+    height: 250px;
+    transition: all 0.3s;
+}
+
+.packagesHolder .tourPackage img:hover {
+    transform: scale(1.2);
+    width: 360px;
+    height: 250px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.packagesHolder .tourPackage h2 {
+    position: absolute;
+    font-size: 20px;
+    color: rgb(255, 238, 0);
+    left: 5px;
+}
+
+.packagesHolder .tourPackage span {
+    font-size: 16px;
+    left: 5px;
+    position: absolute;
+    bottom: 70px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: white;
+}
+
+.packagesHolder .tourPackage button {
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(0, 206, 137);
+    background: rgb(231, 129, 71);
+    left: 5px;
+    font-size: 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.packagesHolder .tourPackage button:hover {
+    color: rgb(231, 129, 71);
+    background: rgb(0, 206, 137);
+    transition: all 0.2s;
+    letter-spacing: 2px;
+    width: 120px;
+}
+
+.parallax02 {
+    background-image: url("../images/maldives.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.parallaximg02transparent {
+    width: 100%;
+    height: 600px;
+    background: rgba(61, 57, 57, 0.397);
+    position: absolute;
+}
+
+.parallaximg02transparent h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: white;
+    left: 39%;
+    position: absolute;
+    letter-spacing: 3px;
+}
+.parallaximg02transparent h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    color: white;
+    left: 13%;
+    color: rgb(255, 208, 0);
+    top: 10%;
+    position: absolute;
+    letter-spacing: 3px;
+}
+
+.parallaximg02transparent p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+    left: 38%;
+    color: white;
+    top: 30%;
+    position: absolute;
+    letter-spacing: 3px;
+}
+
+.bookingTime {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 800px;
+    height: 160px;
+    left: 18%;
+    top: 50%;
+}
+
+.bookingTime .bookingDivs {
+    width: 150px;
+    height: 110px;
+    position: relative;
+    margin: 20px auto;
+}
+
+
+.bookingTime .bookingDivs p {
+    color: rgb(69, 218, 193);
+    font-size: 35px;
+    font-family: 'Anton', sans-serif;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: black;
+    padding: 20px;
+    margin: 0px 0px;
+    border-radius: 10px;
+}
+
+.parallaximg02transparent button {
+    outline: none;
+    width: 150px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0);
+    color: rgb(255, 208, 0);
+    font-size: 15px;
+    position: absolute;
+    bottom: 10%;
+    left: 42%;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 208, 0);
+    transition: all 0.3s;
+}
+
+.parallaximg02transparent button:hover {
+    border: 2px solid teal;
+    color: rgb(255, 208, 0);
+    transition: all 0.3s;
+    letter-spacing: 2px;
+}
+
+.incrediblePlaces {
+    width: 100%;
+    height: 1500px;
+    position: relative;
+    background: rgb(133, 133, 133);
+}
+
+.incrediblePlaces h2 {
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Hind Siliguri', sans-serif;
+    left: 35%;
+    color: rgb(255, 255, 255);
+}
+
+.incrediblePlaces hr {
+    position: absolute;
+    border: 1px solid rgb(255, 187, 0);;
+    width: 350px;
+    left: 34.5%;
+    top: 7%;
+}
+
+.incrediblePlaces p {
+    position: absolute;
+    font-size: 15px;
+    left: 32%;
+    top: 9%;
+    font-family: 'Hind Siliguri', sans-serif;
+    width: 480px;
+    color: wheat;
+}
+
+.incrediblePlacesHolder {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    top: 17%;
+    left: 2.3%;
+    border: 2px solid black;
+}
+
+.incrediblePlacesHolder .placeHolderDivs {
+    margin: 20px auto;
+    width: 360px;
+    height: 360px;
+    box-shadow: 0px 0px 20px 11px #ffeaea;
+}
+
+/* .incrediblePlacesHolder .placeHolderDivs .placeHolderTransparent {
+    width: 360px;
+    height: 360px;
+    background: rgba(0, 95, 184, 0.473);
+    position: relative;
+} */
+
